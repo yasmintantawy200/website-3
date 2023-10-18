@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="pictures/logo.jpg" alt="Avatar Logo" style="width:110px;" style="height: 45px;" > 
+              </a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Where to go
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Milan</a></li>
+                  <li><a class="dropdown-item" href="#">Venice</a></li>
+                  <li><a class="dropdown-item" href="#">Rome</a></li>
+                  <li><a class="dropdown-item" href="#">More......</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">What to do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Plan Your Trip</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Information</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search" style="font-family:'Young Serif', serif; ;">
+              <button class="btn  me-2" type="button" >Search</button >
+            </form>
+
+            <!-- Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Sign in
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" >Sign in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="/action_page.php">
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label" >Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                </div>
+                <div class="form-check mb-3">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal" >Close</button>
+          <button type="button" class="btn"  >Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ////////////////////////////////////////////////////////////////////// -->
+      
+    
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pictures/51734053957_ec87fa64da_k.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Italia.Open to meraviglia</h5>
+              <p>Colosseum - Historical landmark in Rome</p>
+              <button type="button" class="btn ">Come to live Italian</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/41452139202_a938ebf691_k.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Amalfi Coast</h5>
+              <p>One of Italy's most popular destinations</p>
+              <button type="button" class="btn ">Come to visit Italy</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/galleria.jpg" class="d-block w-100" alt="..."  >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Galleria Vittorio Emanuele Ii</h5>
+              <p>Most Famous Shopping Arcade</p>
+              <button type="button" class="btn">Come to visit Italy</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- //////////////////////////////////////// -->
+
+      <div class="jumbotron mt-2 p-5 text-white">
+        <div class="jumbotron-h1"><h1 class="display-3">Landscapes that will take your breath away, rich history, and delicious food, your trip to Italy will be nothing short of unforgettable.</h1></div>
+       <div class="jumbotron-btn"><button type="button" class="btn">Plan your trip now!</button></div>
+      </div>
+
+
+      <!-- //////////////////////////// -->
+      
+
+<div class="section-5">
+    <div class="section-header">
+        <h2>Popular Destinations</h2>
+    </div>
+<div class="container">
+
+    <div class="row justify-content-around card-items">
+        <div class="card" >
+            <img src="pictures/1p.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rome</h5>
+              <p class="card-text">A standard stop on many European vacation itineraries, Rome is not to be missed. Italy’s capital city is a globally renowned cultural and historical powerhouse, boasting everything from ancient ruins and tranquil parks to Michelin-starred restaurants. Here, you'll find the most important relic from the Roman Empire (the Colosseum), some of Michelangelo's greatest works (in the Sistine Chapel), an 18th century Baroque-style fountain (the Trevi Fountain).</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="pictures/2p.jpg" class="card-img-top" alt="..." style="height: 260px;">
+            <div class="card-body">
+              <h5 class="card-title">Florence</h5>
+              <p class="card-text">Situated in the scenic Tuscan valley, Florence woos travelers with old-world avenues leading to picturesque piazzas big and small. While you're soaking up the city's splendor, make sure to stop by the Piazza del Duomo, where the breathtaking Santa Maria del Fiore Cathedral is located, and the romantic Ponte Vecchio, a 14th century bridge overlooking the Arno River.  </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card" >
+            <img src="pictures/3p.jpg" class="card-img-top" alt="..." style="height: 270px;">
+            <div class="card-body">
+              <h5 class="card-title">Venice</h5>
+              <p class="card-text">There are few destinations in the world that are quite like Venice. Its uniqueness can largely be attributed to the canals that run through this northern Italian city like roads, carrying water taxis and buses in addition to its fleet of famous gondolas. As such, there is a palpable bustle here that may surprise some first-timers. For a relaxing Venice vacation, seek out the smaller streets and canals away from the busy Grand Canal and St. Mark's Square. </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          
+
+    </div>
+
+    <div class="row justify-content-around card-items ">
+        <div class="card" >
+            <img src="pictures/4p.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Milan</h5>
+              <p class="card-text">Italy's second-largest city is best known for its high fashion, playing host to Milan Fashion Week each winter and home to iconic fashion houses including Giorgio Armani, Prada and Versace. Visitors can peruse such high-end brands at the dazzling Galleria Vittorio Emanuele II shopping arcade.  </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card" >
+            <img src="pictures/5p.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pompeii</h5>
+              <p class="card-text">This former Roman city in southern Italy is equal parts chilling and impressive. Pompeii was left almost completely intact after it was buried in ash after the eruption of Mount Vesuvius in A.D. 79. Its astonishingly well-preserved ruins now provide present-day visitors a glimpse into what life was like during ancient times. </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="pictures/6p.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lake Como</h5>
+              <p class="card-text">If you really want to treat yourself on your next vacation, Lake Como is where you want to be. Here, opulent villas and hotels line the shores and sandy beaches beckon to sun seekers. You'll see sleek sailboats and speedboats coasting in the middle of the lake, which is the perfect place to admire the region's surrounding hills. </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////////// -->
+<div class="section-6">
+
+    <div class="section-header">
+        <h2>We're knwon for</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="row known-for justify-content-around">
+              
+    
+            <div class="dish plate col-4">
+                <div class="dish-overlay">
+                <div class="dish-title">
+                <H3>Italian Cusine</H3>
+                </div>
+            <div class="dish-example">
+                <img src="pictures/dishww.jpg" alt="">
+                <div class="dish-example-content">
+                    <span>Our most delicious pasta</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="dish fashion col-4">
+            <div class="dish-overlay">
+            <div class="dish-title">
+            <H3>Fashion</H3>
+            </div>
+        <div class="dish-example">
+            <img src="pictures/fashion11.jpg" alt="">
+            <div class="dish-example-content">
+                <span>Our Fashion weeks</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="dish art col-4">
+        <div class="dish-overlay">
+        <div class="dish-title">
+        <H3>Art Museums</H3>
+        </div>
+    <div class="dish-example">
+        <img src="pictures/muse1.jpg" alt="">
+        <div class="dish-example-content">
+            <span>Our Gorgeous Art Museums</span>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ////////////////////////////////////////////////// -->
+
+<div class="section-7">
+
+    <div class="section-header">
+        <h2>Useful Information</h2>
+    </div>
+
+    <div class="container">
+        <div class="row hidden-gems justify-content-around">
+
+
+
+                <div class="hidden-gem">
+                  <div class="hidden-gem-content">
+                      <h3> Monday closures</h3>
+                      <span>Monday is the traditional day of closure for museums and heritage sites. There are some exceptions, but generally you shouldn't rely on being able to visit any archaeological site, museum or gallery on a Monday. The vast majority are open every day from Tuesday to Sunday, but it is always advisable to check in advance. Many shops are also closed on Monday mornings.</span>
+                  </div>
+
+                  <div class="hidden-gem-buttons">
+                    <button class="btn"><i class="fa-solid fa-house"></i> Home</button>
+                    <button class="btn"><i class="fa-solid fa-house"></i> Menu</button>
+                    <button class="btn"><i class="fa-solid fa-house"></i> Trash</button>
+                  </div>
+
+                  <div class="hidden-gem-pic">
+                    <img src="pictures/us1.jpg" alt="">
+                  </div>
+                </div>
+
+
+
+                <div class="hidden-gem hidden-gem2">
+                    <div class="hidden-gem2-content">
+                        <h3>Lazy lunch hours</h3>
+                        <span>Even in the twenty-first century, many Italian businesses and tourist attractions close at lunchtime. Churches are usually closed from noon until at least 3pm. Especially in smaller towns, museums, tourist sights and shops may follow a similar timetable. In the hotter months opening hours often change to allow for a longer lunchtime closure and extended evening opening hours. As you head southwards in Italy, the long lunchtime closure is more common and lasts longer - if you are visiting the south of Italy in the summer, don't expect to do anything between midday and 4pm other than eat and rest.</span>
+                    </div>
+  
+                    <div class="hidden-gem2-buttons">
+                      <button class="btn"><i class="fa-solid fa-house"></i> Learn More</button>
+                    </div>
+  
+                    <div class="hidden-gem2-pic">
+                      <img src="pictures/ui2.jpg" alt="">
+                    </div>
+                  </div>
+
+
+
+                  <div class="hidden-gem">
+                    <div class="hidden-gem-content">
+                        <h3>Buses and trains</h3>
+                        <span>You can find plenty of information about Italian public transport in the travel section of this website. A couple of useful tips are that you usually buy bus tickets before boarding a bus in Italy, and that you can frequently buy tickets for regional trains at station news-stands, as well as at the ticket office. On many Italian trains you can travel with only a reference number or print-out from an online booking, but when you have a papar ticket, you must remember to validate it in the machines provided in stations.</span>
+                    </div>
+  
+                    <div class="hidden-gem-buttons">
+                      <button class="btn"><i class="fa-solid fa-house"></i> Learn More</button>
+                    </div>
+  
+                    <div class="hidden-gem-pic">
+                      <img src="pictures/ui3.jpg" alt="">
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="hidden-gem hidden-gem2">
+                    <div class="hidden-gem2-content">
+                        <h3>Enjoy yourselves</h3>
+                        <span>A holiday in Italy is all about enjoyment. The country has far more than its fair share of sunshine, fascinating cities, glorious views, beautiful beaches, art and culture, friendly locals, fine wines and world-class food. Don't focus too much on itineraries and schedules, try to let any minor inconveniences or inefficiency wash over you, and take the time to appreciate and savour all the country has to offer. Whatever your planned highlights and must-sees were, the most memorable moment may well be that lengthy meal overlooking the water, where service was slow and the house wine was cheap, and you passed hours soaking up the views and sunshine and conducting in-depth research into the local cuisine.</span>
+                    </div>
+  
+                    <div class="hidden-gem2-buttons">
+                      <button class="btn"><i class="fa-solid fa-house"></i> Learn More</button>
+            
+                    </div>
+  
+                    <div class="hidden-gem2-pic">
+                      <img src="pictures/street-scape-positano-italy.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="row mt-3 hidden-gem-showall">
+                    <div class="col-12 text-center">
+                        <button type="button" class="btn btn-outline-dark">Show all <i class="fas fa-arrow-right ml-2"></i></button>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+<!-- //////////////////////////////////////////////////////////// -->
+
+<div class="section-3">
+  <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+  </div>
+<div class="accordion mt-2" id="accordionExample" >
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+     What Distinguishes Us From Other Traveling Compaines?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body" >
+        If we could describe our business with one word it would have to be <strong>“Authentic”</strong>.
+We carefully curates unique holidays for discerning travellers that wish to experience Italy in the most genuine way available.  We have personally selected all our partners and visited every location to ensure each tour maintains every ounce of Italian authenticity. Every journey  with us is a pure reflection of our values and what we believe are truly the most original experiences that Italy has to offer.
+we don’t just see you as our clients, but we treat you as if you are our family and friends.  Taking you to the special spots we visit and eat at with our family and friends.  That being said we also believe every trip should leave a little room for spontaneity!  Keeping inline with Italian traditions and way of life, our tours always offer the best of what is available in season.  Whether it is attending a world famous truffle festivals in the fall, or eating at one of the many summer Sagras, every tour is tailored to give you a true taste of what Italy has to offer during your stay.
+The culinary experience on our tours is second to none, each experience will be unique and give you an authentic taste of Italy.  Unlike other tours, which focus solely on cooking classes, we assure you will be exposed to some of the local history, in harmony with the local food, and culture.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+        What is Custom Tour?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Custom trip planning is what we specialize in. Our tour designers will work with you to create the ideal trip for you based on your interests and budget. Knowledge and contacts are everything in coordinating a successful customized trip. We live here in Italy so we can handle all details, from the most basic to the most personalized request.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"  >
+       Do I Need Visa To Visit Italy?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        If you are a Canadian or US citizen you need only a valid passport. The passport should be valid for six months after the date of travel. Other nationalities should check with the Italian Embassy or consular office for Visa requirements from their countries.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////// -->
+<div class="section-4">
+<div class="section-header">
+  <h2>Translation Bar</h2>
+</div>
+<div class="translate-part mt-4 p-5 text-black">
+
+  <div class="left-translate">
+      <h3>From:</h3>
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+           Choose Language
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Arabic</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">French</a></li>
+            <li><a class="dropdown-item" href="#">Spanish</a></li>
+            <li><a class="dropdown-item" href="#">Russian</a></li>
+            <li><a class="dropdown-item" href="#">German</a></li>
+            <li><a class="dropdown-item" href="#">Korean</a></li>
+            <li><a class="dropdown-item" href="#">Chinese</a></li>
+            <li><a class="dropdown-item" href="#">Japanese</a></li>
+          </ul>
+        </div>
+
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+            <textarea class="form-control" rows="8" cols="80" id="comment" name="text" placeholder="Type to translate"></textarea>
+          </div>
+        </form>
+  </div>
+
+  <div class="right-translate">
+      <h3>To:</h3>
+      <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Italian
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Italian</a></li>
+          </ul>
+        </div>
+
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+            <textarea class="form-control" rows="8" cols="80" id="comment" name="text" placeholder="Translation"></textarea>
+          </div>
+          <button type="button" class="btn" id="cpybtn"onclick="myFunction()" >Copy</button>
+        </form>
+  </div>
+</div>  
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="#"><img src="pictures/logo.jpg" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                            elit,Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Subscribe to our weekly Newsletter dedicated to the Italian culture, art and traditions.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form>
+                                <input type="text" placeholder="Email Address">
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <hr>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy All Right Reserved to Yasmin Ashraf</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
